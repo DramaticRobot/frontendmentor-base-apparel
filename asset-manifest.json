@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/[repo]/static/css/main.0dda67d9.css",
+    "main.js": "/[repo]/static/js/main.f2e58e8b.js",
+    "static/media/hero-desktop.jpg": "/[repo]/static/media/hero-desktop.659bc9a7221d265fe28f.jpg",
+    "static/media/hero-mobile.jpg": "/[repo]/static/media/hero-mobile.1afd055b71b78462d388.jpg",
+    "static/media/logo.svg": "/[repo]/static/media/logo.bfe35add16fb8c010b0231ce711541c6.svg",
+    "index.html": "/[repo]/index.html",
+    "static/media/bg-pattern-desktop.svg": "/[repo]/static/media/bg-pattern-desktop.964ebd4dd8014fd040d7.svg",
+    "static/media/icon-error.svg": "/[repo]/static/media/icon-error.77009af74a9c193a398a6476b25aa1f3.svg",
+    "static/media/icon-arrow.svg": "/[repo]/static/media/icon-arrow.4b3d2d93cd838720beda936cd05c7382.svg",
+    "main.0dda67d9.css.map": "/[repo]/static/css/main.0dda67d9.css.map",
+    "main.f2e58e8b.js.map": "/[repo]/static/js/main.f2e58e8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dda67d9.css",
+    "static/js/main.f2e58e8b.js"
+  ]
+}
