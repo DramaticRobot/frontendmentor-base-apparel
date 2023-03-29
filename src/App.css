@@ -1,38 +1,278 @@
 .App {
-  text-align: center;
-}
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url('./images/bg-pattern-desktop.svg');
+} 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-width: 767px) {
+  /* for mobile */
+  .App {
+    width: 375px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile{
+    visibility: visible;
+  }
+  .desktop {
+    visibility: collapse;
+    height: 0;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .desktop-header-logo{
+    margin: 0;
+    visibility: collapse;
+    height: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  #hero-photo {
+    background-image: url(./images/hero-mobile.jpg);
+    height: 250px;
+    width: 375px;
+  }
+
+  .preface {
+    text-transform: uppercase;
+    margin: 0px 25px 0px;
+    font-weight: 300;
+    letter-spacing: .3em;
+    color: hsl(0, 36%, 70%);
+    font-size: 40px;
+  }
+  
+  .focus-message {
+    text-transform: uppercase;
+    margin: 5px 25px 0px;
+    font-weight: 600;
+    letter-spacing: .3em;
+    text-align: center;
+    font-size: 40px;
+    color: hsl(0, 6%, 24%);
+  }
+  
+  .details-message {
+    text-align: center;
+    margin: 30px 25px 20px;
+    font-weight: 400;
+    color: hsl(0, 36%, 70%);
+    font-size: 14px;
+    letter-spacing: .02em;
+    line-height: 1.5em;
+  }
+
+  .mobile-header-logo {
+    width: 100px;
+    margin: 30px 38px 30px;
+  }
+  
+  .desktop-header-logo {
+    margin: 60px 0px 0px 80px;
+  }
+  
+  .email-form{
+    position: relative;
+    width: 360px;
+    margin: 20px 25px 0px;
+    left: 18px;
+  }
+  
+  .email-input:focus {
+    border: solid;
+    border-color: hsl(0, 93%, 68%);
+    border-width: medium;
+    height: 39px;
+    width: 225.5px;
+    outline: none;
+  }
+  
+  .email-input {
+    height: 44px;
+    width: 230px;
+    border-radius: 2rem 0 0 2rem;
+    border-width: thin;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    padding-left: 30px;
+    letter-spacing: .02em;
+    font-weight: 400;
+    font-size: 16px
+  }
+  
+  .email-input::placeholder {
+    color: hsl(0, 74%, 74%);
+    font-size: 13px;
+  }
+  
+  .email-input-button {
+    height: 48px;
+    width: 62px;
+    border-radius: 2rem;
+    position: relative;
+    left: -20px;
+    top: 2px;
+    border: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 10px 10px hwb(0 46% 21% / 0.447);
+  }
+  
+  .email-icon-arrow {
+    width: 10px;
+  }
+  
+  .email-input-message {
+    color: hsl(0, 93%, 68%);
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .email-icon-error {
+    position: relative;
+    top: -76px;
+    right: -216px;
+    width: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 768px) {
+  /* for desktop */
+  .App {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0px;
+  }
+
+  .mobile{
+    visibility: collapse;
+    height: 0;
+  }
+
+  .desktop{
+    visibility: visible;
+  }
+
+  #hero-photo {
+    background-image: url(./images/hero-desktop.jpg);
+    height: 800px;
+    width: 610px;
+  }
+
+  .preface {
+    text-transform: uppercase;
+    margin: 120px 80px 0px;
+    font-weight: 300;
+    letter-spacing: .2em;
+    color: hsl(0, 36%, 70%);
+    font-size: 70px;
+  }
+  
+  .focus-message {
+    text-transform: uppercase;
+    margin: 5px 80px 0px;
+    font-weight: 600;
+    letter-spacing: .3em;
+    line-height: 1.1;
+    font-size: 62px;
+    color: hsl(0, 6%, 24%);
+  }
+  
+  .details-message {
+    text-align: left;
+    margin: 30px 260px 20px 80px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(0, 36%, 70%);
+    font-size: 17px;
+  }
+
+  .mobile-header-logo {
+    width: 100px;
+    margin: 30px 38px 30px;
+  }
+  
+  .desktop-header-logo {
+    margin: 60px 0px 0px 80px;
+  }
+  
+  .email-form{
+    margin: 20px 0px 0px 80px;
+    position: relative;
+  }
+  
+  .email-input:focus {
+    border: solid;
+    border-color: hsl(0, 93%, 68%);
+    border-width: medium;
+    height: 40px;
+    width: 375.5px;
+    outline: none;
+  }
+  
+  .email-input {
+    height: 44px;
+    width: 380px;
+    border-radius: 2rem 0 0 2rem;
+    border-width: thin;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    padding-left: 30px;
+    letter-spacing: .02em;
+    font-weight: 400;
+    font-size: 16px
+  }
+  
+  .email-input::placeholder {
+    color: hsl(0, 74%, 74%);
+  }
+  
+  .email-input-button {
+    height: 48px;
+    width: 85px;
+    border-radius: 2rem;
+    position: relative;
+    left: -30px;
+    top: 2px;
+    border: none;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 10px 10px hwb(0 46% 21% / 0.447);
+  }
+  
+  .email-icon-arrow {
+    width: 10px;
+  }
+  
+  .email-input-message {
+    color: hsl(0, 93%, 68%);
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .email-icon-error {
+    position: relative;
+    top: -75px;
+    right: -350px;
+    width: 20px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email-input-button-clicked {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
 }
